@@ -10,7 +10,19 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class testPing {
 
     @ParameterizedTest
-    @CsvSource({"I, 1", "V, 5", "II, 2", "IV, 4", "V, 5" , "IX, 9", "X, 10", "L, 50", "C, 100", "D, 500", "M, 1000" })
+    @CsvSource({"I, 1",
+            "V, 5",
+            "II, 2",
+            "IV, 4",
+            "IX, 9",
+            "X, 10",
+            "XvI, 16",
+            "L, 50",
+            "C, 100",
+            "D, 500",
+            "M, 1000",
+            "vii, 7"
+    })
     public void testNumber1(String roman, int expected) {
 //        System.out.print('I');
         assertEquals(expected,RomanConverter.Convert(roman));

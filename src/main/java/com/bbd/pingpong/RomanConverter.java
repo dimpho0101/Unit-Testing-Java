@@ -7,6 +7,7 @@ public class RomanConverter {
     public static int Convert(String s) {
         int num = 0;
 
+        s = s.toUpperCase();
         s = s.replaceAll("IV", "IIII");
         s = s.replaceAll("IX", "VIIII");
         s = s.replaceAll("XL", "XXXX");
@@ -41,6 +42,9 @@ public class RomanConverter {
                     break;
                    default:
                        throw new RuntimeException("character invalid");
+            }
+            if(num > 1000){
+                throw new RuntimeException("fuckkkkkk");
             }
         }
         return num;
