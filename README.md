@@ -127,9 +127,9 @@ CLXXVIII = 100 + 50 + 10 + 10 + 5 + 1 + 1 + 1 = 178
 MMX = 1,000 + 1,000 + 10 = 2,010 SUBTRACTIVE SYSTEMYou can write one smaller numeral to the left of a larger one to subtract from it! The table below has all the allowed subtractive combinations
 
 Roman Numeral	Value	Equivalent
-IV	4	IIII
-IX	9	VIIII
-XL	40	XXXX
-XC	90	LXXXX
-CD	400	CCCC
-CM	900	DCCCC
+IV	4	IIII |
+IX	9	VIIII |
+XL	40	XXXX |
+XC	90	LXXXX |
+CD	400	CCCC | 
+CM	900	DCCCC 
