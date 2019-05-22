@@ -1,0 +1,13 @@
+
+
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 16%;
+  border-radius:50%;
+}
+
+.black{
+  background-color: #2D1674;
+}
