@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <h2 class="main">Welcome, Please enter your name:</h2>
+    <form class="" action="index.html" method="post">
+    <input type="text" name="" value="">
+      <button type="button" onclick="load()" name="button">submit</button>
+      <p id="demo"></p>
+    </form>
+    <script>
+      function load()
+      {
+        var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+     document.getElementById("demo").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "html.txt", true);
+  xhttp.send();
+      }
+    </script>
+  </body>
+</html>
